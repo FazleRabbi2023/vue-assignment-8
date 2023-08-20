@@ -7,7 +7,7 @@ defineEmits(['update:messageFromChild'])
 </script>
 
 <template>
-  <div class="border-2 p-10">
+  <div class="p-10">
       <div>
         <h1 class="text-2xl font-semibold mb-3">{{ messageToChild }}</h1>
       </div>
@@ -20,7 +20,7 @@ defineEmits(['update:messageFromChild'])
         </div>
         <div class="flex gap-2 my-5">
           <!-- <button @click="$emit('update:messageFromChild', person.url)" class="bg-blue-500 text-white focus:outline-none">Show</button> -->
-          <button @click="$emit('update:messageFromChild', 'Hasan Ali')" class="bg-blue-500 text-white focus:outline-none">Show</button>
+          <button @click="$emit('update:messageFromChild', person.url)" class="bg-blue-500 text-white focus:outline-none">Show</button>
           <button @click="$emit('update:messageFromChild', '')" class="bg-blue-500 text-white focus:outline-none">Hide</button>
         </div>
       </div>
